@@ -19,7 +19,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             counter_upload.py
@@ -60,7 +60,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             INSTAGRAM/
@@ -118,7 +118,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             INSTAGRAM/
@@ -174,7 +174,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             FACEBOOK/
@@ -232,7 +232,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             FACEBOOK/

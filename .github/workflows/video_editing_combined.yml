@@ -19,7 +19,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             counter_video_editing.py
@@ -60,7 +60,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             IPNBY/quality.ipynb
@@ -283,7 +283,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: Paragon/paragon
+          repository: Paragoun/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             kaggle_rotation.py
