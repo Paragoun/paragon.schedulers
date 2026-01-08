@@ -16,7 +16,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          repository: WtfThatsInteresting/wtf.thats.interesting
+          repository: Paragon/paragon
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             IPNBY/quality.ipynb
