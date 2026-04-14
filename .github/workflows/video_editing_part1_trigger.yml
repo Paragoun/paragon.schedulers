@@ -62,6 +62,7 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             IPNBY/quality.ipynb
+            AUDIO
             VIDEO_EDITING_QUALITY
             counter_video_editing.txt
             video_end_tracker.txt
