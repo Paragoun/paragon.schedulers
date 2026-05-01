@@ -3,10 +3,12 @@ name: INSTAGRAM DELETE SCHEDULER
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * *'   # 11:30 PM IST (6:00 PM UTC)
+    - cron: '30 18 * * *'   # 12:00 AM IST (6:30 PM UTC)
+    - cron: '30 23 * * *'   # 5:00 AM IST (11:30 PM UTC)
+    - cron: '30 4 * * *'    # 10:00 AM IST (4:30 AM UTC)
     - cron: '30 9 * * *'    # 3:00 PM IST (9:30 AM UTC)
-    - cron: '0 6 * * *'    # 11:30 AM IST (6:00 AM UTC)
-  
+    - cron: '30 14 * * *'   # 8:00 PM IST (2:30 PM UTC)
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
