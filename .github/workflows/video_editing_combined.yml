@@ -2,12 +2,12 @@ name: VIDEO EDITING COMBINED (WITH COUNTER)
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: '30 18 * * *'   # 12:00 AM IST (6:30 PM UTC previous day)
-  #   - cron: '30 23 * * *'   # 5:00 AM IST (11:30 PM UTC previous day)
-  #   - cron: '30 4 * * *'    # 10:00 AM IST (4:30 AM UTC)
-  #   - cron: '30 9 * * *'    # 3:00 PM IST (9:30 AM UTC)
-  #   - cron: '30 14 * * *'   # 8:00 PM IST (2:30 PM UTC)
+  schedule:
+    - cron: '30 18 * * *'   # 12:00 AM IST (6:30 PM UTC previous day)
+    - cron: '30 23 * * *'   # 5:00 AM IST (11:30 PM UTC previous day)
+    - cron: '30 4 * * *'    # 10:00 AM IST (4:30 AM UTC)
+    - cron: '30 9 * * *'    # 3:00 PM IST (9:30 AM UTC)
+    - cron: '30 14 * * *'   # 8:00 PM IST (2:30 PM UTC)
 
 jobs:
   update-counter:
@@ -64,6 +64,7 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           sparse-checkout: |
             IPNBY/quality.ipynb
+            AUDIO
             VIDEO_EDITING_QUALITY
             counter_video_editing.txt
             video_end_tracker.txt
@@ -216,7 +217,7 @@ jobs:
             "language": "python",
             "kernel_type": "notebook",
             "is_private": true,
-            "enable_gpu": true,
+            "enable_gpu": false,
             "enable_internet": true,
             "dataset_sources": [
               "$KAGGLE_USERNAME/video-editing-data"
