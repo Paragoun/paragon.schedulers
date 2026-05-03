@@ -79,8 +79,8 @@ jobs:
       - name: Configure Sparse Checkout for Specific Reel
         run: |
           REEL_NUMBER="${{ needs.update-counter.outputs.reel_number }}"
-          echo "Setting sparse-checkout for reel_${REEL_NUMBER}.mp4"
-          echo "REELS/reel_${REEL_NUMBER}.mp4" >> .git/info/sparse-checkout
+          echo "Setting sparse-checkout for reel_${REEL_NUMBER}"
+          echo "REELS/reel_${REEL_NUMBER}" >> .git/info/sparse-checkout
           git sparse-checkout reapply
           
       # Set up Python
@@ -136,8 +136,8 @@ jobs:
       - name: Configure Sparse Checkout for Specific Reel
         run: |
           REEL_NUMBER="${{ needs.update-counter.outputs.reel_number }}"
-          echo "Setting sparse-checkout for reel_${REEL_NUMBER}.mp4"
-          echo "REELS/reel_${REEL_NUMBER}.mp4" >> .git/info/sparse-checkout
+          echo "Setting sparse-checkout for reel_${REEL_NUMBER}"
+          echo "REELS/reel_${REEL_NUMBER}" >> .git/info/sparse-checkout
           git sparse-checkout reapply
       
       # Set up Python
@@ -194,8 +194,8 @@ jobs:
       - name: Configure Sparse Checkout for Specific Reel
         run: |
           REEL_NUMBER="${{ needs.update-counter.outputs.reel_number }}"
-          echo "Setting sparse-checkout for reel_${REEL_NUMBER}.mp4"
-          echo "REELS/reel_${REEL_NUMBER}.mp4" >> .git/info/sparse-checkout
+          echo "Setting sparse-checkout for reel_${REEL_NUMBER}"
+          echo "REELS/reel_${REEL_NUMBER}" >> .git/info/sparse-checkout
           git sparse-checkout reapply
 
       # Set up Python
@@ -251,8 +251,8 @@ jobs:
       - name: Configure Sparse Checkout for Specific Reel
         run: |
           REEL_NUMBER="${{ needs.update-counter.outputs.reel_number }}"
-          echo "Setting sparse-checkout for reel_${REEL_NUMBER}.mp4"
-          echo "REELS/reel_${REEL_NUMBER}.mp4" >> .git/info/sparse-checkout
+          echo "Setting sparse-checkout for reel_${REEL_NUMBER}"
+          echo "REELS/reel_${REEL_NUMBER}" >> .git/info/sparse-checkout
           git sparse-checkout reapply
 
       # Set up Python
